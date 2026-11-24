@@ -1,0 +1,19 @@
+# 依赖与构建产物
+node_modules/
+dist/
+dist-pages/
+
+# 工具与本地临时目录
+.screenshots/
+.workbuddy/
+.trae-html-share-packages/
+tools/
+
+# 本地文件已损坏（内容全为 0xFF），待重建后再纳入版本管理
+docs/
+scripts/
+
+# 日志与系统文件
+*.log
+.DS_Store
+Thumbs.db

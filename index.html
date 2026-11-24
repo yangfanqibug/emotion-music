@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="基于人脸情绪识别的歌曲推荐系统 —— 本地表情识别模型 + 情绪画像音乐推荐" />
+  <title>情绪音乐推荐系统 · Face Emotion Music</title>
+  <style>
+    html, body, #app { height: 100%; margin: 0; }
+    body {
+      background: #f4f6fb;
+      color: #18202b;
+      font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, -apple-system, sans-serif;
+    }
+    #boot {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 14px;
+      background: #f4f6fb; z-index: 999; transition: opacity .4s ease;
+      font-size: 14px; color: #8d97a8; letter-spacing: .04em;
+    }
+    #boot .ring {
+      width: 42px; height: 42px; border-radius: 50%;
+      border: 3px solid #e5e9f2; border-top-color: #2f6bff;
+      animation: spin .9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="boot"><div class="ring"></div><div>正在加载本地情绪识别模型…</div></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
